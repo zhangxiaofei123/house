@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleVC">
+            <connections>
+                <outlet property="eight" destination="tLd-f3-qZX" id="78k-uc-cEq"/>
+                <outlet property="seven" destination="ytn-bY-Rfe" id="sfx-cF-1of"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="single_view_show.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="goQ-YV-JzD">
+                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytn-bY-Rfe">
+                    <rect key="frame" x="10" y="902" width="30" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <connections>
+                        <action selector="seven:" destination="-1" eventType="touchUpInside" id="P81-wf-cnL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-f3-qZX">
+                    <rect key="frame" x="10" y="938" width="30" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <connections>
+                        <action selector="eight:" destination="-1" eventType="touchUpInside" id="2gZ-pm-wdU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="goQ-YV-JzD" secondAttribute="bottom" id="6Og-G8-N1A"/>
+                <constraint firstItem="goQ-YV-JzD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KGW-M7-mme"/>
+                <constraint firstAttribute="trailing" secondItem="goQ-YV-JzD" secondAttribute="trailing" id="PXq-cO-2xI"/>
+                <constraint firstItem="goQ-YV-JzD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jCf-1i-pdE"/>
+            </constraints>
+            <point key="canvasLocation" x="-625" y="-431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="single_view_show.jpg" width="2048" height="1536"/>
+    </resources>
+</document>

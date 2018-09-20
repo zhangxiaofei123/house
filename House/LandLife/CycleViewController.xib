@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CycleViewController">
+            <connections>
+                <outlet property="cycleScrollView" destination="K7k-19-iQb" id="LUD-NV-9aH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7k-19-iQb" customClass="SDCycleScrollView">
+                    <rect key="frame" x="0.0" y="-10" width="1024" height="778"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K7k-19-iQb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CCI-e2-iBx"/>
+                <constraint firstAttribute="bottom" secondItem="K7k-19-iQb" secondAttribute="bottom" id="Ee6-8j-kNl"/>
+                <constraint firstAttribute="trailing" secondItem="K7k-19-iQb" secondAttribute="trailing" id="Rjo-9u-5pd"/>
+                <constraint firstItem="K7k-19-iQb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-10" id="yYX-vI-2QF"/>
+            </constraints>
+            <point key="canvasLocation" x="-415" y="13"/>
+        </view>
+    </objects>
+</document>
